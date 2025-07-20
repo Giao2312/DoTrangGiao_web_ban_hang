@@ -14,7 +14,6 @@ export const connectDB = async () => {
     databaseInstance = MongoClientIntance.db(env.DATABASE_NAME);
 }
 
-
 export const  GET_DB =  () => {
     if (!databaseInstance) {
         throw new Error(' Database not connected ');
